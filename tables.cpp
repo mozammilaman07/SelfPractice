@@ -5,7 +5,7 @@ int main()
 {
     int n;
     cin >> n;
-    for (int i = 6; i < n; i++)
+    for (int i = 6; i <= n; i++)
     {
         cout << "Table of " << i << endl;
         for (int j = 1; j <= 10; j++)
