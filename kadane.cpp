@@ -24,5 +24,10 @@ int main()
     int n = 5;
 
     int kadane = maxSubArray(arr, n);
-    cout << "print " << kadane << endl;
+    // cout << "print " << kadane << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "array " << arr[i] << " " << endl;
+    }
 }
