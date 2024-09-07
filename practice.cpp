@@ -18,5 +18,6 @@ int main()
     int arr[] = {10, 20, 30, 40, 50, 60};
     int n = 6;
 
+    print(arr, n);
     reverse(arr, n);
 }
