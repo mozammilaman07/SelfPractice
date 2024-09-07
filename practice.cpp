@@ -7,6 +7,10 @@ void reverse(int arr[], int n)
 
 void print(int arr[], int n)
 {
+    for (int i = 0; i < n; i++)
+    {
+        cout << "array : " << arr[i] << endl;
+    }
 }
 
 int main()
