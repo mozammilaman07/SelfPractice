@@ -25,7 +25,7 @@ int secondLargest(int arr[], int n)
         {
             if (res == -1)
             {
-                res = -1;
+                res = i;
             }
             else if (arr[i] > arr[res])
             {
@@ -40,4 +40,6 @@ int main()
 {
     int arr[] = {10, 54, 21, 6, 41, 14};
     int n = 6;
+    int seclargest = secondLargest(arr, n);
+    cout << "ans is : " << seclargest << endl;
 }
