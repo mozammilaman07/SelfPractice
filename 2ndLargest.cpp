@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int largest(int arr[], int n)
+int getlargest(int arr[], int n)
 {
     int largest = 0;
     for (int i = 1; i < n; i++)
@@ -10,8 +10,13 @@ int largest(int arr[], int n)
         {
             largest = i;
         }
-        }
+    }
     return largest;
+}
+
+int secondLargest(int arr[], int n)
+{
+    int largest = getlargest(arr, n);
 }
 
 int main()
