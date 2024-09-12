@@ -25,11 +25,11 @@ int secondLargest(int arr[], int n)
         {
             if (res == -1)
             {
-                res = arr[i];
+                res = i;
             }
             else if (arr[i] > arr[res])
             {
-                res = arr[i];
+                res = i;
             }
         }
     }
