@@ -42,4 +42,6 @@ int main()
     int n = 6;
     int seclargest = secondLargest(arr, n);
     cout << "ans is : " << seclargest << endl;
+    int ans = arr[seclargest];
+    cout << "value is : " << ans << endl;
 }
