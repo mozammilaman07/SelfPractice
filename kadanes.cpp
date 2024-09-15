@@ -9,7 +9,7 @@ void kadanes(int arr[], int n)
         {
             for (int k = i; k <= j; k++)
             {
-                cout << arr[i];
+                cout << arr[k];
             }
             cout << " ";
         }
