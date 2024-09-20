@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+void merge(int arr1[], int size1, int arr2[], int size2, int arr3[])
+{
+}
+
 int main()
 {
     int arr1[5] = {1, 5, 6, 7, 9};
