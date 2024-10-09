@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+void pairs(int arr[], int n)
+{
+}
+
 int main()
 {
     int arr[] = {10, 20, 30};
