@@ -14,7 +14,7 @@ int main()
     {
         for (int j = 0; j < col; j++)
         {
-            cout << arr[i][j];
+            cout << arr[i][j] << " ";
         }
         cout << endl;
     }
