@@ -8,4 +8,5 @@ int main()
         {11, 12, 13, 14}};
 
     int row = 2;
+    int col = 4;
 }
