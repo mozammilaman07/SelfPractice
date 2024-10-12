@@ -10,11 +10,11 @@ int main()
     int row = 2;
     int col = 4;
 
-    for (int i = 0; i < row; i++)
+    for (int i = 0; i < col; i++)
     {
-        for (int j = 0; j < col; j++)
+        for (int j = 0; j < row; j++)
         {
-            cout << arr[i][j] << " ";
+            cout << arr[j][i] << " ";
         }
         cout << endl;
     }
