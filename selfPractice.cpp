@@ -33,3 +33,25 @@ using namespace std;
 //         cout << arr[i] << " ";
 //     }
 // }
+
+void rotate(int arr[], int n, int k)
+{
+    int ans[k];
+
+    for (int i = 0; i < n; i++)
+    {
+        int j = (i + k) % n;
+        ans[j] = arr[i];
+    }
+    ans = arr;
+}
+
+int main()
+{
+
+    int arr[] = {10, 20, 30, 40, 50, 60};
+    int n = 6;
+    int k = 3;
+
+    rotate(arr, n, k);
+}
