@@ -36,14 +36,32 @@ using namespace std;
 
 void rotate(int arr[], int n, int k)
 {
-    int ans[k];
+    // int ans[k];
 
-    for (int i = 0; i < n; i++)
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int j = (i + k) % n;
+    //     ans[j] = arr[i];
+    // }
+    // arr = ans;
+
+    k = k % n;
+
+    int ans[k];
+    for (int i = 0; i < k; i++)
     {
-        int j = (i + k) % n;
-        ans[j] = arr[i];
+        ans[i] = arr[i];
     }
-    ans = arr;
+
+    for (int i = k; i < n; i++)
+    {
+        arr[i - k] = arr[i];
+    }
+
+    for (int i = n - k; i < n; i++)
+    {
+        arr[i] = ans[i - (n - k)];
+    }
 }
 
 int main()
@@ -51,7 +69,12 @@ int main()
 
     int arr[] = {10, 20, 30, 40, 50, 60};
     int n = 6;
-    int k = 3;
+    int k = 8;
 
     rotate(arr, n, k);
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
 }
