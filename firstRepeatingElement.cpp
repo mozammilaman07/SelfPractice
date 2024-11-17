@@ -18,8 +18,8 @@ void firstRepeat(int arr[], int n)
         }
     }
 
-    cout << "Repeated or not : " << isRepeat;
-    // cout << "at index : " << index;
+    cout << "Repeated or not : " << isRepeat << endl;
+    cout << "at index : " << index;
 }
 
 int main()
