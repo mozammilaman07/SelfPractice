@@ -1,25 +1,34 @@
 #include <iostream>
-#include <limits.h>
 using namespace std;
 
-int findMin(int arr[], int n)
+void reverseArray(int arr[], int n)
 {
-    int minAns = INT_MAX;
+    int left = 0;
+    int right = n - 1;
+    while (left <= right)
+    {
+        swap(arr[left], arr[right]);
+        left++;
+        right--;
+    }
+}
+
+void printArray(int arr[], int n)
+{
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] < minAns)
-        {
-            minAns = arr[i];
-        }
+        cout << arr[i] << " ";
     }
-    return minAns;
+    cout << endl;
 }
 
 int main()
 {
-    int arr[] = {7, 18, 64, 20, 4, 02, 98, 15};
-    int n = 8;
 
-    int ans = findMin(arr, n);
-    cout << "minimum number in array is : " << ans << endl;
+    int arr[] = {10, 20, 30, 40, 50, 60};
+    int n = 6;
+
+    printArray(arr, n);
+    reverseArray(arr, n);
+    printArray(arr, n);
 }
