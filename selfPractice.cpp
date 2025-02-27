@@ -1,28 +1,24 @@
 #include <iostream>
 using namespace std;
 
-void printArray(int arr[4][3], int row, int col)
-{
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = i; j < col; j++)
-        {
-            cout << arr[i][j] << ", ";
-        }
-        cout << endl;
-    }
-}
-
 int main()
 {
 
-    int arr[4][3] = {
-        {10, 20, 30},
-        {40, 50, 60},
-        {70, 80, 90},
-        {100, 110, 120},
-    };
-    int row = 4;
-    int col = 3;
-    printArray(arr, row, col);
+    int arr[] = {1, 5, 6, 1, 7, 5};
+    int n = 6;
+
+    // precompute
+    int hash[13] = {0};
+    for (int i = 0; i < n; i++)
+    {
+        hash[arr[i]] += 1;
+    }
+    int q;
+    cin >> q;
+    while (q--)
+    {
+        int number;
+        cin >> number;
+        cout << hash[number] << endl;
+    }
 }
