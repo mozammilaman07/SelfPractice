@@ -1,3 +1,6 @@
+#include <iostream>
+using namespacestd;
+
 // #include <iostream>
 // using namespace std;
 
