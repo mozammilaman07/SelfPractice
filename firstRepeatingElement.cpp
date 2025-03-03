@@ -3,7 +3,9 @@ using namespacestd;
 
 int main()
 {
-    int arr[] = {4, 6, 20, 25, 45, 80, 88, 90};
+    int arr[] = {4, 6, 20, 25, 45, 25, 88, 90};
+    int size = 8;
+    int target = 25;
 }
 
 // #include <iostream>
