@@ -1,6 +1,11 @@
 #include <iostream>
 using namespacestd;
 
+int main()
+{
+    int arr[] = {4, 6, 20, 25, 45, 80, 88, 90};
+}
+
 // #include <iostream>
 // using namespace std;
 
