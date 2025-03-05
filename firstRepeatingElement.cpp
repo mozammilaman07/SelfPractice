@@ -1,11 +1,41 @@
 #include <iostream>
-using namespacestd;
+using namespace std;
+
+int firstOccurence(int arr[], int size, int target)
+{
+    int s = 0;
+    int e = size - 1;
+    int mid = (s + e) / 2;
+    int ans = -1;
+
+    while (s <= e)
+    {
+        if (arr[mid] == target)
+        {
+            ans = mid;
+            e = mid - 1;
+        }
+        else if (arr[mid] > target)
+        {
+            e = mid - 1;
+        }
+        else if (arr[mid] < target)
+        {
+            s = mid + 1;
+        }
+        mid = (s + e) / 2;
+    }
+    return ans;
+}
 
 int main()
 {
     int arr[] = {4, 6, 20, 25, 45, 25, 88, 90};
     int size = 8;
     int target = 25;
+
+    int finalAns = firstOccurence(arr, size, target);
+    cout << "Element found at : " << finalAns << endl;
 }
 
 // #include <iostream>
